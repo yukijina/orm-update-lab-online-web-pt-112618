@@ -61,8 +61,9 @@ class Student
     sql = <<-SQL
       SELECT * FROM students
     SQL
+    binding.pry
     DB[:conn].execute(sql).map do |row|
-      binding.pry
+      
       
     end
   end
