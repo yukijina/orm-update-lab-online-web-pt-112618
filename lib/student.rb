@@ -63,7 +63,7 @@ class Student
     SQL
     DB[:conn].execute(sql).map do |row|
       binding.pry
-      student = Student.new(row)
+      
       
     end
 
