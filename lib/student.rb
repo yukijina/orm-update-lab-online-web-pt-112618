@@ -28,7 +28,7 @@ class Student
     DB[:conn].execute(sql)
   end
   
-  def self.update 
+  def update 
     
   end 
   
