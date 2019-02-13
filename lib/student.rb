@@ -29,7 +29,9 @@ class Student
   end
   
   def update 
-    
+    sql = <<-SQL
+      UPDATE SET name, grade
+    SQL
   end 
   
   def save 
