@@ -66,7 +66,8 @@ class Student
       SELECT * FROM students WHERE name = ?
     SQL
     binding.pry
-    DB[:conn].execute(sql, name)[0][0]
+    DB[:conn].execute(sql, name) map do |row| 
+      
     end 
     
   end 
