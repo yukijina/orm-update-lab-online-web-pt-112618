@@ -49,8 +49,11 @@ class Student
     end
   end 
   
-  def self.create 
-    
+  def self.create(name,grade) 
+    sql = <<-SQL
+      INSERT INTO tables (name, grade) VALUES (?,?)
+    SQL
+    DB[:conn].execute(sql,name,)
   end 
 
 
